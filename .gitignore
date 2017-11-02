@@ -15,4 +15,5 @@
 .idea/runConfigurations.xml
 .idea/vcs.xml
 app/build/
-/android-view-compasstape/build/
+android-view-compasstape/build/
+
