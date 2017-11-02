@@ -113,10 +113,10 @@ public class CompassTapeLayout extends View implements SensorEventListener, Loca
     public void onSensorChanged(SensorEvent event) {
         if (timer < System.currentTimeMillis() - 120) {
             if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-                gravity = lowPassFilter(event.values, gravity);
+                gravity = lowPassFilter(event.values.clone(), gravity);
             }
             if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
-                geomagnetic = lowPassFilter(event.values, geomagnetic);
+                geomagnetic = lowPassFilter(event.values.clone(), geomagnetic);
             }
             if (gravity != null && geomagnetic != null) {
                 float R[] = new float[9];
