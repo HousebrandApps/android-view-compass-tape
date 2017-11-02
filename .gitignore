@@ -7,3 +7,12 @@
 /build
 /captures
 .externalNativeBuild
+.gitignore
+.idea/gradle.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+app/build/
+/android-view-compasstape/build/
